@@ -5,7 +5,7 @@
 <template>
     <div>
        <v-toolbar height="90">
-          <v-img :src="src/assets/img/logo.webp" alt="logo" height="50" class="ml-n16"/>
+          <v-img src="src/assets/img/logo.webp" alt="logo" height="50" class="ml-n16"/>
           <v-spacer></v-spacer>
           
      <Navbar_Route/>

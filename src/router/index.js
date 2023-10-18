@@ -6,10 +6,16 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: 'HomeView',
       component: HomeView
     },
+    { path: '/menu', name: 'menu', component: Public.Menu},
+    { path: '/contact', name: 'contact', component: Public.contact},
+    { path: '/apropos', name: 'apropos', component: Public.apropos},
+    { path: '/resa', name: 'resa', component: Public.resa},
     
+    //404
+    { path: '/:pathMatch(.*)*', name: 'redirection', component: redirection},
   ]
 })
 
